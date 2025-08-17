@@ -75,33 +75,33 @@ def main():
         5. **Generate** structured summary and insights
         """)
         
-        st.header("⚙️ System Status")
+        # st.header("⚙️ System Status")
         
-        # Check system components
-        with st.spinner("Checking system components..."):
-            # Check Ollama model
-            model_available = st.session_state.llm_handler.check_model_availability()
+        # # Check system components
+        # with st.spinner("Checking system components..."):
+        #     # Check Ollama model
+        #     model_available = st.session_state.llm_handler.check_model_availability()
             
-            if model_available:
-                st.success("✅ Ollama Model Ready")
-            else:
-                st.error("❌ Ollama Model Not Available")
+        #     # if model_available:
+        #     #     st.success("✅ Ollama Model Ready")
+        #     # else:
+        #     #     st.error("❌ Ollama Model Not Available")
             
-            # Check AssemblyAI
-            if Config.ASSEMBLY_AI_API_KEY and Config.ASSEMBLY_AI_API_KEY != "your_assembly_ai_key_here":
-                st.success("✅ AssemblyAI Configured")
-            else:
-                st.error("❌ AssemblyAI API Key Missing")
+        #     # Check AssemblyAI
+        #     if Config.ASSEMBLY_AI_API_KEY and Config.ASSEMBLY_AI_API_KEY != "your_assembly_ai_key_here":
+        #         st.success("✅ AssemblyAI Configured")
+        #     else:
+        #         st.error("❌ AssemblyAI API Key Missing")
         
-        st.header("📊 Supported Formats")
-        st.write(", ".join(Config.SUPPORTED_FORMATS))
-        st.write(f"Max file size: {Config.MAX_AUDIO_SIZE_MB}MB")
-        st.header("🐛 Debug Options")
-        debug_mode = st.checkbox("Enable Debug Mode", help="Shows detailed logs and test responses")
-        st.session_state['debug_mode'] = debug_mode
+        # st.header("📊 Supported Formats")
+        # st.write(", ".join(Config.SUPPORTED_FORMATS))
+        # st.write(f"Max file size: {Config.MAX_AUDIO_SIZE_MB}MB")
+        # st.header("🐛 Debug Options")
+        # debug_mode = st.checkbox("Enable Debug Mode", help="Shows detailed logs and test responses")
+        # st.session_state['debug_mode'] = debug_mode
     
-        if debug_mode:
-          st.warning("Debug mode enabled - check console for detailed logs")
+        # if debug_mode:
+        #   st.warning("Debug mode enabled - check console for detailed logs")
     
     # Main content area
     tab1, tab2, tab3 = st.tabs(["🔄 Process Meeting", "📚 Meeting History", "⚙️ Settings"])

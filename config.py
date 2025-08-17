@@ -22,7 +22,7 @@ class Config:
     
     # Audio Configuration
     MAX_AUDIO_SIZE_MB = 250
-    SUPPORTED_FORMATS = ['.mp3', '.wav', '.m4a', '.mp4', '.webm']
+    SUPPORTED_FORMATS = ['.mp3', '.wav', '.m4a', '.webm']
     
     # LLM Configuration
     TEMPERATURE = 0.3
