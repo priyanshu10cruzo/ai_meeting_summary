@@ -11,6 +11,3 @@ An end-to-end agentic AI application that converts meeting audio recordings into
 - 💾 **Data Persistence**: Save and retrieve meeting history
 - 🌐 **Web Interface**: User-friendly Streamlit frontend
 
-## Installation
-
-1. **Clone the repository**
