@@ -1,4 +1,4 @@
-# AI Meeting Summarizer Bot
+# AI Meeting Summarizer
 
 An end-to-end agentic AI application that converts meeting audio recordings into structured summaries and actionable insights using AssemblyAI, Ollama/Llama2, and RAG (Retrieval-Augmented Generation).
 
